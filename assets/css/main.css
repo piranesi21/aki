@@ -967,6 +967,7 @@ header {
     bottom: 15vw;
     right: 7vw;
     transform: none;
+    font-size: 2vmax;
 }
 
 #banner .container {
@@ -996,9 +997,6 @@ section {
 
 .mobile {
     display: block;
-}
-
-title {
 }
 
 /* Header */
