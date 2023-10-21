@@ -953,7 +953,7 @@ header {
 #banner {
     background: url(images/background-mobile.jpg) no-repeat;
     background-position: center top;
-    background-size: 120vw auto;
+    background-size: auto 90%;
     height: 100%;
     width: 100vw;
 }
@@ -1106,7 +1106,7 @@ input {
 /* About */
 
 #about {
-    margin-top: 100%;
+    margin-top: 100vh;
     padding: 0 0;
     min-height: auto;
 }
