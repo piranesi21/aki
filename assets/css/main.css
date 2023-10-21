@@ -751,7 +751,7 @@ iframe {
     transition: all 0.2s;
 }
 
-a:after {
+#credit a:after {
     content: "";
     position: absolute;
     top: 0;
@@ -1029,7 +1029,7 @@ header ul {
 }
 
 header li {
-	margin:-40pt auto;
+	margin: -4em auto;
     margin-left: 0;
     text-align: center;
     line-height: 0.8em;
@@ -1054,7 +1054,6 @@ header span::after {
 }
 
 header li a::before {
-    content: "";
     display: block;
     width: calc(100vw - 6rem);
     position: absolute;
@@ -1068,8 +1067,14 @@ header span {
 }
 
 header a {
+    pointer-events: none;
     padding: 1.8rem 20vw 1.8rem 20vw;
     margin: 0;
+}
+
+
+header .hypereffect {
+    pointer-events: all;
 }
 
 .hypereffect:before {
@@ -1188,8 +1193,12 @@ input {
     font-size: 8vw;
 }
 
+#info .field {
+    margin-right: 0;
+}
+
 #info h1 {
-    font-size: 12pt;
+    font-size: max(1vw, 10pt);
     padding-top: 0;
     width: 80vw;
     padding-top: 0.2em;
@@ -1197,7 +1206,7 @@ input {
 }
 
 #info h1:first-child {
-    padding-top: 20pt;
+    padding-top: 15pt;
 }
 
 #info h2 {
@@ -1262,7 +1271,7 @@ input {
 #credit {
     padding: 6rem 10vw 3rem 10vw;
     text-align: center;
-    font: 1.3vw;
+    font-size: 3.5vw;
 }
 
 .credit-info {
@@ -1274,14 +1283,20 @@ input {
     min-width: auto;
 }
 
+#credit h1 {
+    font-size: 0.5em;
+    margin-top: 5em;
+}
+
 /* Footer */
 
 #footer {
-    height: 75pt;
+    height: 70pt;
 }
 
 #footer .copyright {
     margin: 3em 0 0;
+    font-size: 6pt;
 }
 
 #footer .copyright h1::after {
@@ -1295,6 +1310,21 @@ input {
     margin-left: 0;
     padding-left: 0;
     line-height: 1.5em;
+}
+
+}
+
+
+@media (min-width: 481px) and (max-width: 1000px) {
+
+nav {
+    display: none;
+}
+
+#banner {
+    background-position: center bottom;
+    background-size:  100vw auto;
+
 }
 
 }

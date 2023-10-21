@@ -77,7 +77,7 @@
 
 	// hreflinks Checks
 
-	$('a[href^="#"]').addClass("emptylink");
+	$('a.sitebutton[href^="#"]').addClass("emptylink");
 
 })(jQuery);
 
