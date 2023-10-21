@@ -401,7 +401,7 @@ iframe {
     text-align: center;
     font-size: 1em;
     color: #DD66AA;
-    width: 1.6em;
+    width: 5vw;
 }
 
 #tracklist h2 {
@@ -410,9 +410,11 @@ iframe {
     vertical-align: middle;
     padding-left: 1em;
     line-height: 1.4em;
+    width: 75vw;
 }
 
 #tracklist i {
+    font-family: 'Poppins';
     display: inline-block;
     font-weight: 600;
     color: #fff;
@@ -444,6 +446,7 @@ iframe {
 }
 
 #tracklist em {
+    font-family: 'Poppins';
     font-weight: 300;
     font-size: 0.8em;
     line-height: 0.4em;
@@ -1125,18 +1128,30 @@ input {
 /* Tracklist */
 
 #tracklist {
-    padding: 6rem 4vw 6rem 4vw;
+    padding: 6rem 10vw 6rem 10vw;
 }
 
 #tracklist li {
-    font-size: 10pt;
+    font-size: 3.02vw;
 }
 
+#tracklist li {
+    margin: 0;
+}
 
 #tracklist li p {
     width: 70vw;
 }
 
+#tracklist h1 {
+    width: 15vw;
+}
+
+#tracklist h2 {
+    width: 70vw;
+    text-align: justify;
+    padding-left: 5vw;
+}
 
 /* Information */
 
